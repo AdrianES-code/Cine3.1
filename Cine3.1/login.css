@@ -1,0 +1,255 @@
+*{
+		border: 0;
+		margin: 0;
+		padding: 0;
+}
+header{
+	background-color: rgb(0,32,105);
+}
+#izquierda{
+	display: inline-block;
+	width: 30%;
+
+}
+#izquierda img{
+	height: 70px;
+	width: 150px;
+	margin-left: 10em; 
+}
+#centro{
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+	
+	width: 30%;
+	height: 4.6em;
+}
+#centro button{
+	border-radius: 1em;
+	margin-top: 1.5em;
+	padding: 1em 0.5em;
+	cursor: pointer;
+	font-weight: bolder;
+}
+#centro button:hover{
+	background-color: rgb(0,32,105);
+	color: white;
+}
+#derecha{
+	text-align: center;
+	vertical-align: top;
+	display: inline-block;
+	
+	width: 38%;
+	height: 4.6em;
+}
+#derecha button{
+	border-radius: 1em;
+	margin-top: 1.5em;
+	padding: 1em 2em;
+	margin-left: 3em;
+	cursor: pointer;
+	font-weight: bolder;
+}
+#derecha button:hover{
+	background-color: rgb(0,32,105);
+	color: white;
+}
+nav{
+	height: 1em;
+	text-align: center;
+	width: 100%;
+	background-color: yellow;
+	display: inline-block;
+}
+header nav ul{
+	background-color: black;
+	color: white;
+}
+header nav ul li{
+	margin-left: 3em;
+	display: inline-block;
+	cursor: pointer;
+	color: white;
+}
+a{
+	color: white;
+	text-decoration: none;
+}
+section{
+	margin-left:30em;
+	width: 25vw;
+	height: 100vh;
+	background-color: rgb(249,249,249);
+}
+#mensaje{
+	width: 50%;
+	margin:0em 1.5em;
+	padding:1em;
+	text-align: justify;
+	font-family: 'Arial';
+	font-size: 1.1em;
+	color: steelblue;
+}
+#boton{
+	margin:0em 1em;
+	padding:0.5em 0em 0em 0em;
+	text-align: center;
+}
+form{
+	padding-top: 4em;
+	width: 100%;
+	z-index: 1;
+}
+input[type="text"],input[type="password"]{
+	width: 70%;
+	padding: 1.5em;
+	margin: 0.7em 4em;
+	text-align: justify;
+	border-radius: 3px;
+	background-color: rgb(237,237,237);
+	color: rgb(155,145,143);
+	font-weight: bolder;
+	font-size: 0.6em;
+}
+input[type="text"]:hover{
+	box-shadow: 2px 2px 2px rgb(148,36,35);
+	background-color: rgb(249,249,249);
+}
+input[type="password"]:hover{
+	box-shadow: 2px 2px 2px rgb(7,45,58);
+	background-color: rgb(249,249,249);
+}
+input[type="checkbox"]{
+	margin-right: 1em;
+	vertical-align: top;
+}
+p{
+	margin: 1em 3.3em 0em 3.3em;
+	color: rgb(155,145,143);
+	font-family: 'Arial';
+	font-size: 0.750em;
+	width: 70%;
+	font-weight: bolder;
+}
+/**::-webkit-input-placeholder{
+   Google Chrome y Safari
+   	font-size: 0.3rem;
+   	margin: 0;
+   	vertical-align: top;
+} */
+button[type="submit"]{
+	background-color: rgb(237,237,237) ;
+	padding:1em; 
+	margin:0em 2em 2em 2em;
+	text-align: center;
+	color: rgb(155,145,143);
+	cursor: pointer;
+	border-radius: 10px;
+}
+button[type="submit"]:hover{
+	background:linear-gradient(45deg,rgb(0,32,105),steelblue);
+	color: white;
+}
+h2{
+	margin: 0em 2em;
+	padding: 0.5em 0em;
+	/*rgb(49,69,68)*/
+	background:linear-gradient(45deg,rgb(148,36,35),rgb(7,45,58));
+	font-size: 0.7em;
+	font-weight: bolder;
+	color: white;
+	font-family: 'Arial';
+	border-radius: 2px;
+}
+footer{
+	width: 70%;
+	margin: 2em 2em 0em 2em;
+}
+#cuenta,#sesionerror{
+	margin-left: 1em;
+	color: rgb(155,145,143);
+	font-weight: bolder;
+	font-size: 0.6em;
+	font-family: 'Arial';
+	cursor: pointer;
+}
+#sesionerror:hover{
+	color: rgb(148,36,35);
+}
+#cuenta:hover{
+	color: steelblue;
+}
+@media (max-width: 1030px){
+	section{
+		width: 38vw;
+	}
+}
+@media (max-width: 415px){
+	#fondo{
+		width: 100vw;
+		position: absolute;
+		z-index: -1;
+		filter: blur(2px);
+	}
+	#mensaje{
+		width: 80%;
+		margin:0em 3em;
+		font-size: 0.6em;
+		color: white;
+	}
+	section{ 
+		margin: 0em 4.5em;
+		width: 60vw;
+		height: 60vh;
+		background-color: transparent;
+	}
+	form{
+		text-align: center;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+	}	
+	#boton{
+		margin:1em 1em 0em 3em;
+		padding:1em 0em;
+		text-align: center;
+	}
+	h2{
+		background:transparent;
+		color: tomato;
+	}
+	footer{
+		width: 70%;
+		margin: 2em 2em 0em 4em;
+	}
+	#cuenta,#sesionerror{
+		color: white;
+		margin-top: 4em;
+	}
+	#cuenta:hover,#sesionerror:hover{
+		cursor: pointer;
+		color: steelblue;
+	}
+	p{
+		color: white;
+	}
+}
+@media (max-width: 320px){
+	section{
+		margin: 0em 3em;
+	}
+	h2{
+		margin: 0em;
+		padding: 0em;
+	}
+	footer{
+		margin: 0em 2em 0em 3.5em;
+	}
+	#cuenta,#sesionerror{
+		margin-top: 0.5em;
+	}
+	#boton{
+		padding:0.5em 0em 0em 0em;
+	}
+}

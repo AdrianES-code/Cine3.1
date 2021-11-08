@@ -1,0 +1,189 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+header{
+	background-color: rgb(0,32,105);
+}
+#izquierda{
+	display: inline-block;
+	width: 30%;
+
+}
+#izquierda img{
+	height: 70px;
+	width: 150px;
+	margin-left: 10em; 
+}
+#centro{
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+	
+	width: 30%;
+	height: 4.6em;
+}
+#centro button{
+	border-radius: 1em;
+	margin-top: 1.5em;
+	padding: 1em 0.5em;
+	cursor: pointer;
+	font-weight: bolder;
+}
+#centro button:hover{
+	background-color: rgb(0,32,105);
+	color: white;
+}
+#derecha{
+	text-align: center;
+	vertical-align: top;
+	display: inline-block;
+	
+	width: 38%;
+	height: 4.6em;
+}
+#derecha button{
+	border-radius: 1em;
+	margin-top: 1.5em;
+	padding: 1em 2em;
+	margin-left: 3em;
+	cursor: pointer;
+	font-weight: bolder;
+}
+#derecha button:hover{
+	background-color: rgb(0,32,105);
+	color: white;
+}
+nav{
+	height: 1em;
+	text-align: center;
+	width: 100%;
+	background-color: yellow;
+	display: inline-block;
+}
+header nav ul{
+	background-color: black;
+	color: white;
+}
+header nav ul li{
+	margin-left: 3em;
+	display: inline-block;
+	cursor: pointer;
+	color: white;
+}
+a{
+	color: white;
+	text-decoration: none;
+}
+section{
+	margin-left: 7em;
+	width: 82%;
+	display: inline-block;
+	vertical-align: top;
+}
+#beneficios{
+	display: inline-block;
+	padding: 1em 1em;
+	width: 47%;
+	text-align: left;
+	min-height: 300px;
+}
+#beneficios p{
+	margin-left: 0.5em;
+	padding: 1.5em 0em;
+	display: inline-block;
+	font-size: 0.7em;
+	color: gray;
+}
+#beneficios h1{
+	color: blue;
+}
+#registro{
+	width: 43%;
+	padding: 1em;
+	vertical-align: top;
+	display: inline-block;
+}
+#registro h1{
+	font-size: 1.5em;
+	font-weight: bold;
+	padding-bottom: 1em;
+	color: steelblue;
+}
+#registro .conectar{
+	margin-left: 0.5em;
+	font-size: 1em;
+	color: gray;
+}
+#boton{
+	margin:0em 1em;
+	padding:0.5em 0em 0em 0em;
+}
+button[type="submit"]{
+	padding: 1em 2em;
+	border-radius: 1em;
+	background-color:rgb(0,32,105);
+	color: white;
+	margin: 2em 0em;
+	cursor: pointer;
+}
+button[type="submit"]:hover{
+	background-color: black;
+}
+#terminos{
+	margin-top: 6.5em;
+}
+#terminos .indicaciones{
+	margin-left: 0.5em;
+	display: inline-block;
+	font-size: 1em;
+	color: gray;
+}
+#terminos ul{
+	margin-left: 0.5em;
+	padding: 1.5em 0em;
+	display: inline-block;
+	font-size: 0.7em;
+	color: gray;
+	list-style-type: circle;
+}
+.social {
+	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+  left: 0; /* Establecemos la barra en la izquierda */
+	top: 200px; /* Bajamos la barra 200px de arriba a abajo */
+	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+ 
+.social ul {
+	list-style: none;
+}
+ 
+.social ul li a {
+	display: inline-block;
+	color:#fff;
+	background: #000;
+	padding: 10px 15px;
+	text-decoration: none;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+}
+ 
+.social ul li .icon-facebook {background:rgb(0,32,105);} /* Establecemos los colores de cada red social, aprovechando su class */
+.social ul li .icon-twitter {background: #00abf0;}
+.social ul li .icon-pinterest {background: #666666;}
+.social ul li .icon-instagram {background:linear-gradient(45deg,rgb(255,0,255),orange);}
+ 
+.social ul li a:hover {
+	background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
+	padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+}
+
+footer{
+	text-align: center;
+	font-size: 1em;
+	font-weight: bolder;
+	background-color: rgb(0,32,105);
+	color: white;
+}
